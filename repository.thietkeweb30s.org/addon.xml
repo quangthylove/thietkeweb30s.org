@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<addon 
+	id="repository.thietkeweb30s.org" 
+	version="2.0.1" 
+	name="[COLOR red][B]THIET[/B][/COLOR][COLOR blue][B]KE[/B][/COLOR][COLOR yellow][B]WEB[/B][/COLOR][COLOR lime][B]30S[/B][/COLOR].[COLOR orange][B]ORG[/B][/COLOR][B] Repository[/B]"
+	provider-name="thietkeweb30s.org">
+	<requires>
+	<import addon="xbmc.addon" version="12.0.0"/>
+		<import addon="plugin.video.thietkeweb30s.org.movie" version="2.5.9" />
+		<import addon="plugin.video.kodi4vn.launcher" version="5.3.9" />
+		<import addon="plugin.video.thietkeweb30s.org.moviesplay" version="2.6.6" />
+		<import addon="plugin.video.vietmediaF" version="5.1.2" />
+		<import addon="plugin.video.phimhaynhat" version="3.5.1.4" />
+		<import addon="plugin.video.4vn.fptplay" version="1.6.3" />
+		<import addon="plugin.video.thietkeweb30s.org.fshare" version="1.0.8" />
+		<import addon="plugin.video.thietkeweb30s.sctv" version="2.3" />
+		<import addon="plugin.video.thietkeweb30s.org.zingtv" version="1.0.2" />
+		<import addon="plugin.video.HieuHien.vn" version="2.0.2" />
+		<import addon="service.kodi4vn.maintenance" version="0.9" />
+		<import addon="service.subtitles.phude" version="1.2.6" />
+	</requires>
+	<extension point="xbmc.addon.repository"
+		name="Thietkeweb30s.org Add-on's Repository">
+		<info compressed="true">http://code.thietkeweb30s.org/thietkeweb30s.org-master/thietkeweb30s.org-master/zips/addons.xml</info>
+		<checksum>http://code.thietkeweb30s.org/thietkeweb30s.org-master/thietkeweb30s.org-master/zips/addons.xml.md5</checksum>		
+		<datadir zip="true">http://code.thietkeweb30s.org/thietkeweb30s.org-master/thietkeweb30s.org-master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Install addon from Hieuhien.vn's repository</summary>
+		<description lang="en">[COLOR red][B]thietkeweb30s.org[/COLOR]-[COLOR lime]Repository tập hợp các addon và repository giải trí online trên XBMC - Kodi[/B][/COLOR]</description>
+		<disclaimer lang="en">Mọi nội dung được lấy từ Internet vì vậy chúng tôi không chịu trách nhiệm về chất lượng cũng như sự ổn định</disclaimer>
+		<email>honhakhanhquynh@gmail.com</email>
+		<platform>all</platform>
+	</extension>
+</addon>
