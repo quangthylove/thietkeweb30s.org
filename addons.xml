@@ -485,9 +485,6 @@
         <import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.video.F4mProxy" optional="true"/>
 		<import addon="script.module.youtube.dl" optional="true"/>
-	        <import addon="plugin.video.thietkeweb30s.org.xemphimmienphi" version="0.1" />
-	        <import addon="plugin.video.thietkeweb30s.org.vtvgo" version="1.1" />
-	        <import addon="plugin.video.kodi4vn.xomgiaitri" version="9.9.32" />
 		<import addon="script.module.six"/>
 		<import addon="script.module.pil"/>
     </requires>
@@ -1146,7 +1143,10 @@
 		<import addon="plugin.video.thietkeweb30s.org.htvonline" version="1.0.0" />
 		<import addon="plugin.video.f4mTester" version="5.6.2" />
 		<import addon="plugin.video.thietkeweb30s.org.phatam" version="2.0.2" />
-	        <import addon="plugin.video.thietkeweb30s.phim60s" version="0.2" />
+	    <import addon="plugin.video.thietkeweb30s.phim60s" version="0.2" />
+        <import addon="plugin.video.thietkeweb30s.org.xemphimmienphi" version="0.1" />
+	    <import addon="plugin.video.thietkeweb30s.org.vtvgo" version="1.1" />
+	    <import addon="plugin.video.kodi4vn.xomgiaitri" version="9.9.32" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
 	</requires>
 	<extension point="xbmc.addon.repository"
