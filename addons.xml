@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
 <addon id="plugin.audio.thietkeweb30s.org.khosachnoi"
@@ -1531,5 +1531,4 @@
 		<source>https://github.com/tomer953/skin.phenomenal</source>
 	</extension>
 </addon>
-
 </addons>
