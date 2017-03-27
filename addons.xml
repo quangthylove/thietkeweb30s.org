@@ -1071,9 +1071,9 @@
 	</requires>
 	<extension point="xbmc.addon.repository"
 		name="Thietkeweb30s.org Add-on's Repository">
-		<info compressed="true">http://code.thietkeweb30s.org/thietkeweb30s.org-master/thietkeweb30s.org-master/zips/addons.xml</info>
-		<checksum>http://code.thietkeweb30s.org/thietkeweb30s.org-master/thietkeweb30s.org-master/zips/addons.xml.md5</checksum>		
-		<datadir zip="true">http://code.thietkeweb30s.org/thietkeweb30s.org-master/thietkeweb30s.org-master/zips/</datadir>
+		<info compressed="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml.md5</checksum>		
+		<datadir zip="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Install addon from Thietkeweb30s.org's repository</summary>
