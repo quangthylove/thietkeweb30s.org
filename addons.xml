@@ -1173,7 +1173,6 @@
         <import addon="plugin.video.thietkeweb30s.org.xemphimmienphi" version="0.1" />
 	    <import addon="plugin.video.thietkeweb30s.org.vtvgo" version="1.1" />
 	    <import addon="plugin.video.kodi4vn.xomgiaitri" version="9.9.32" />
-	    <import addon="plugin.audio.vietmediaF" version="9.9.1" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
 	</requires>
 	<extension point="xbmc.addon.repository"
