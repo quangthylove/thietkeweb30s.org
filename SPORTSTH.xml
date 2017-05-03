@@ -2,15 +2,9 @@
 		
 
 		<item>
-		<title>======================================================</title>
+		<title>============[COLOR red][B]NHÀ SÁCH PHÁT ĐẠT 107 NGUYỄN HUỆ - TP HUẾ[/B][/COLOR]=============</title>
 		<link>http://</link>
-		<thumbnail></thumbnail>
-		<item>
-
-		<item>
-		<title>[COLOR red][B]******* Cần Addon Plexus & Addon Sportsdevil *******[/B][/COLOR]</title>
-		<link>http://</link>
-		<thumbnail>https://s24.postimg.org/mal8efoxx/plexus.jpg</thumbnail>
+		<thumbnail>http://thietkeweb30s.org/files/mic/logo.png</thumbnail>
 		<item>
 
 		<item>
@@ -144,50 +138,7 @@
 <thumbnail>http://fantazyrepo.uk/addonimages/livetv/sport.jpg</thumbnail>
 </item>
 ///////////////////////////////////////                 
-<item>
-<title>[COLOR cyan][B]>>> KÊNH THỂ THAO (Ace stream) 1[/B][/COLOR]</title>
-<link>http://ignorame</link>
-<externallink>https://raw.githubusercontent.com/thanh51/repository.thanh51/master/Ace(kodi).m3u</externallink>
-<thumbnail>https://s22.postimg.org/9vk2rbqep/ace.png</thumbnail>
-</item> 
 
-//////////////////////////////////////
-
- <item>
-<title>[COLOR cyan][B]>>> KÊNH THỂ THAO (Ace stream) 2[/B][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-	<title>[COLOR deepskyblue][makelist.param1][/COLOR]</title>
-	<link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1&amp;name=Adryanlist+Arenavision</link>
-	<thumbnail>https://s22.postimg.org/9vk2rbqep/ace.png</thumbnail>
-]]></listrepeat>
-<expres>EXTINF:-1,(.*?)\nacestream://(.*)</expres>
-<page>http://super-pomoyka.us.to/trash/ttv-list/ttv.sport.player.m3u</page>
-<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
-</regex>
-<thumbnail>https://s22.postimg.org/9vk2rbqep/ace.png</thumbnail>
-</item>		
-
-///////////////////////////////////////	
-
-<item>
-<title>[COLOR cyan][B]>>> KÊNH THỂ THAO (Ace stream) 3[/B][/COLOR]</title>
-<link>http://ignorame</link>
-<externallink>https://raw.githubusercontent.com/thanh51/repository.thanh51/master/TVplexus2.xml</externallink>
-<thumbnail>https://s22.postimg.org/9vk2rbqep/ace.png</thumbnail>
-</item> 
-
-//////////////////////////////////////
-            
-<item>
-<title>[COLOR cyan][B]>>> FOOTBALL VIDEOS[/B][/COLOR]</title>
-<link>http://ignorame</link>
-<externallink>http://www.bulldogstreams.football/foxfull.xml</externallink>
-<thumbnail>https://s30.postimg.org/yyex12te9/bongda.jpg</thumbnail>
-</item>
-//////////////////////
 <item>
 <title>[COLOR yellow][B]>>> Thể Thao Tổng Hợp (In YoutuBe)[/B] [/COLOR]</title>
 <link>$doregex[makelist]</link>
@@ -220,10 +171,3 @@
 
 </items>
 </channel>
-
-
-
-
-
-
-
