@@ -1207,7 +1207,7 @@
 
 <addon 
 	id="repository.thietkeweb30s.org" 
-	version="3.0.1" 
+	version="3.0.2" 
 	name="[COLOR red][B]THIET[/B][/COLOR][COLOR blue][B]KE[/B][/COLOR][COLOR yellow][B]WEB[/B][/COLOR][COLOR lime][B]30S[/B][/COLOR].[COLOR orange][B]ORG[/B][/COLOR][B] Repository[/B]"
 	provider-name="thietkeweb30s.org">
 	<requires>
@@ -1233,6 +1233,8 @@
         <import addon="plugin.video.thietkeweb30s.org.xemphimmienphi" version="0.1" />
 	    <import addon="plugin.video.thietkeweb30s.org.vtvgo" version="1.1" />
 	    <import addon="plugin.video.kodi4vn.xomgiaitri" version="9.9.32" />
+	    <import addon="plugin.video.thietkeweb30s.org.IPTVShare" version="1.1.1" />
+	    <import addon="plugin.video.SportsDevil" version="2017.03.28" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
 	</requires>
 	<extension point="xbmc.addon.repository"
