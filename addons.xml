@@ -118,6 +118,33 @@
   </extension>
 </addon>
 
+<addon
+  id="plugin.video.SportsDevil"
+  version="2017.03.28"
+  name="SportsDevil"
+  provider-name="SportsDevil">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />
+   <import addon="script.module.livestreamer" />
+  </requires>
+  <extension 
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service/proxy_service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos of different sports streaming sites</summary>
+    <description>Play videos of different sports streaming sites</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.xbmchubmaintenance" version="2.1.3"
 	name="Maintenance Tool" provider-name="tvaddons.ag">
   <requires>
@@ -694,6 +721,39 @@
 			<platform>all</platform>
 		</extension>
 	</addon>
+
+<addon id="plugin.video.thietkeweb30s.org.IPTVShare"
+       name="[COLOR red][B]IPTV[/B][/COLOR][COLOR blue][B]Share[/B][/COLOR]"
+       version="1.1.1"
+       provider-name="Thietkeweb30s.org">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="plugin.video.SportsDevil" version="2017.03.28" optional="true"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />    
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="autostart.py" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Kênh giải trí tổng hợp.</summary>
+    <description>Thietkeweb30s.org chỉnh lý và tổng hợp các kênh.</description>
+    <disclaimer>[COLOR orangered]Các kênh được phổ biến và chia sẻ miễn phí trên internet. Chúng tôi không chịu bất kỳ trách nhiệm pháp lý.[/COLOR]</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
 
 <addon id="plugin.video.thietkeweb30s.org.dangcap" name="DANGCAPHD MOVIES" version="0.0.6" provider-name="ĐẲNG CẤP DIGITAL; thaitni">
     <requires>
