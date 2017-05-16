@@ -288,9 +288,10 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.hkn.hdonline" name="[COLOR green]*[/COLOR]HDOnline" version="1.0.5" provider-name="anhlon">
+<addon id="plugin.video.hkn.hdonline" name="[COLOR green]*[/COLOR]HDOnline" version="1.0.6" provider-name="anhlon">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.framework" version="1.4"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py" />
 	<extension point="xbmc.addon.metadata">
@@ -304,6 +305,7 @@
 <addon id="plugin.video.hkn.phimmoi" name="[COLOR green]*[/COLOR]PhimMoi" version="1.3.8" provider-name="anhlon">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.framework" version="1.4"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py" />
 	<extension point="xbmc.addon.metadata">
@@ -1065,6 +1067,20 @@
     <platform>all</platform>
   </extension>
 </addon> 
+
+<addon id="script.module.framework" name="XBMC Plugin Framework" version="1.4" provider-name="">
+  <requires>
+    <import addon="xbmc.python" version="2.7.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Framework for writing xbmc plugins</summary>
+    <description></description>
+    <license></license>
+    <platform>all</platform>
+    <website></website>
+  </extension>
+</addon>
 
 <addon id="script.module.requests"
        name="requests"
