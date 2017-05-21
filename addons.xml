@@ -562,11 +562,12 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.phimhaynhat" name="[COLOR lime][B]Phim[/COLOR][COLOR yellow]Hay[/COLOR][COLOR cyan]Nhat[/B][/COLOR]" version="3.5.3.4" provider-name="THIETKEWEB30S">
+<addon id="plugin.video.phimhaynhat" name="[COLOR lime][B]Phim[/COLOR][COLOR yellow]Hay[/COLOR][COLOR cyan]Nhat[/B][/COLOR]" version="3.5.3.5" provider-name="THIETKEWEB30S">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.video.F4mProxy" optional="true"/>
 		<import addon="script.module.youtube.dl" optional="true"/>
+        <import addon="plugin.video.thietkeweb30s.sport" version="1.0.0" />
 		<import addon="script.module.six"/>
 		<import addon="script.module.pil"/>
     </requires>
