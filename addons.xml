@@ -120,7 +120,7 @@
 
 <addon
   id="plugin.video.SportsDevil"
-  version="2017.04.06"
+  version="2017.05.23"
   name="SportsDevil"
   provider-name="SportsDevil">
   <requires>
