@@ -403,7 +403,7 @@
 
 <addon
   id="plugin.video.4vn.fptplay"
-  version="1.6.6"
+  version="1.6.7"
   name="[COLOR red]*thietkeweb30s.org*[/COLOR]Play"
   provider-name="thietkeweb30s.org">
   <requires>
@@ -614,7 +614,7 @@
 </addon>
 
 <addon id="plugin.video.thietkeweb30s.org.moviesplay"
-       version="2.7.3"
+       version="2.7.4"
        name="[COLOR red]HUEHD*[/COLOR]PLUS"
        provider-name="Thietkeweb30s.org">
     <requires>
