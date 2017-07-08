@@ -562,7 +562,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.phimhaynhat" name="[COLOR lime][B]Phim[/COLOR][COLOR yellow]Hay[/COLOR][COLOR cyan]Nhat[/B][/COLOR]" version="3.5.3.9" provider-name="THIETKEWEB30S">
+<addon id="plugin.video.phimhaynhat" name="[COLOR lime][B]Phim[/COLOR][COLOR yellow]Hay[/COLOR][COLOR cyan]Nhat[/B][/COLOR]" version="3.5.4.1" provider-name="THIETKEWEB30S">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.video.F4mProxy" optional="true"/>
@@ -1278,7 +1278,7 @@
 		<import addon="plugin.video.kodi4vn.launcher" version="5.3.9" />
 		<import addon="plugin.video.thietkeweb30s.org.moviesplay" version="2.7.3" />
 		<import addon="plugin.video.vietmediaF" version="6.1.4" />
-		<import addon="plugin.video.phimhaynhat" version="3.5.3.9" />
+		<import addon="plugin.video.phimhaynhat" version="3.5.4.1" />
 		<import addon="plugin.video.4vn.fptplay" version="1.6.7" />
 		<import addon="plugin.video.thietkeweb30s.org.fshare" version="1.1.4" />
 		<import addon="plugin.video.thietkeweb30s.sctv" version="2.6" />
