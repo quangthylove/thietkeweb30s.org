@@ -15,10 +15,11 @@
 	</extension>
 </addon>
 	
-<addon id="plugin.video.thietkeweb30s.update" name="[COLOR ffff0000]THIETKEWEB30S.ORG [/COLOR]Check Update" version="1.1.1" provider-name="thietkeweb30s.org member">
+<addon id="plugin.video.thietkeweb30s.update" name="[COLOR ffff0000]THIETKEWEB30S.ORG[/COLOR]Check Update" version="1.1.1" provider-name="thietkeweb30s.org member">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py" />
     <extension point="xbmc.addon.metadata">
 		<summary>Entertainment</summary>
 		<description>Addon cho phép kiểm tra và cập nhật phiên bản cập nhật mới nhất cho MEDIACENTER</description>
