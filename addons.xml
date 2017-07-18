@@ -19,15 +19,13 @@
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py" />
-    <extension point="xbmc.addon.metadata">
 		<summary>Entertainment</summary>
 		<description>Addon cho phép kiểm tra và cập nhật phiên bản cập nhật mới nhất cho MEDIACENTER</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 		<language>en</language>
 	</extension>
-</addon>
+</addon> 
 	
 <addon id="plugin.audio.thietkeweb30s.org.khosachnoi"
        version="1.0.0"
