@@ -1065,6 +1065,24 @@
   </extension>
 </addon>
 
+<addon
+  id="plugin.video.kodi4vn.hplus.vn"
+  version="10.7"
+  name="*[COLOR yellow]HPlus Online[/COLOR]"
+  provider-name="thongld">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.xbmcswift2" version="1.3.1" />
+    <import addon="script.module.requests" version="1" />
+  </requires>
+  <extension point="xbmc.python.module" library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary>HPlus</summary>
+    <description>Watch free hplus.vn (Vietnamese) Channels</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.youtube" name="[COLOR red]HUEHD*[/COLOR]PLUS" version="6.2.6" provider-name="Thietkeweb30s.org">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -1404,6 +1422,7 @@
 	    <import addon="plugin.video.kodi4vn.xomgiaitri" version="9.9.32" />
 	    <import addon="plugin.video.thietkeweb30s.sctv" version="2.7" />
         <import addon="plugin.video.thietkeweb30s.org.IPTVShare" version="1.1.1" />
+        <import addon="plugin.video.kodi4vn.hplus.vn" version="10.7" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
 	</requires>
 	<extension point="xbmc.addon.repository"
