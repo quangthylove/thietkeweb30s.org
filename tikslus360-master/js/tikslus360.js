@@ -1,3 +1,4 @@
+
 /*
 Tikslus360 v 1.0.0 
 Author: Pushpendra Singh Chouhan @ pushpendra.as400@gmail.com
@@ -113,7 +114,7 @@ load_images();
 fadeTimerId=setInterval(function(){fadeIn();}, options.fadeInInterval);
 if(options.autoRotate==true && typeof img_Array[options.imageCount] != 'undefined') {
 start_auto_rotate();
-view360.find(".autorotate").text("Stop Auto Rotate");
+view360.find(".autorotate").text("Dừng Tự động xoay");
 }
 
 //event handling
@@ -157,7 +158,7 @@ view360.find("#"+options.canvasID).mousedown(function(e){ //  mousedown event
 		e.preventDefault();
 if(options.autoRotate==false){
 start_auto_rotate();
-$(this).text("Stop Auto Rotate");
+$(this).text("Dừng Tự động xoay");
 }
 else{
 stop_auto_rotate();
@@ -237,4 +238,4 @@ rotate360(auto_rotate_count);
            element.data('tikslus360', tikslus360);
        });
    };
-})(jQuery);	 
+})(jQuery);	  
