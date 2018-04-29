@@ -494,7 +494,7 @@
 
 <addon
   id="plugin.video.thietkeweb30s.sctv"
-  version="2.9"
+  version="3.0"
   name="SCTV"
   provider-name="thietkeweb30s.org">
   <requires>
@@ -1373,7 +1373,7 @@
 		<import addon="plugin.video.thietkeweb30s.org.htvonline" version="2.0.0" />
 		<import addon="plugin.video.thietkeweb30s.org.phatam" version="2.0.2" />
 	    <import addon="plugin.video.thietkeweb30s.phim60s" version="0.2" />
-	    <import addon="plugin.video.thietkeweb30s.sctv" version="2.9" />
+	    <import addon="plugin.video.thietkeweb30s.sctv" version="3.0" />
 		<import addon="plugin.video.f4mTester" version="5.6.2" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
 		<import addon="repository.thietkeweb30s.org" version="2.0.2" />
@@ -1420,7 +1420,7 @@
         <import addon="plugin.video.thietkeweb30s.org.xemphimmienphi" version="0.1" />
 	    <import addon="plugin.video.thietkeweb30s.org.vtvgo" version="1.5" />
 	    <import addon="plugin.video.kodi4vn.xomgiaitri" version="9.9.32" />
-	    <import addon="plugin.video.thietkeweb30s.sctv" version="2.9" />
+	    <import addon="plugin.video.thietkeweb30s.sctv" version="3.0" />
         <import addon="plugin.video.thietkeweb30s.org.IPTVShare" version="1.1.1" />
         <import addon="plugin.video.kodi4vn.hplus.vn" version="10.7" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
