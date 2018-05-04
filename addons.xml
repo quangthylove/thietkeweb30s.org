@@ -203,8 +203,8 @@
 
 <addon
   id="plugin.video.kodi4vn.bilutv"
-  version="5.11"
-  name="*[COLOR yellow]BiluTV.com[/COLOR]"
+  version="5.1.12"
+  name="[COLOR yellow]BiluTV.com[/COLOR]"
   provider-name="thongld">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -632,7 +632,7 @@
 		<import addon="script.video.F4mProxy" optional="true"/>
 		<import addon="script.module.youtube.dl" optional="true"/>
         <import addon="plugin.video.thietkeweb30s.sport" version="1.0.0" />
-        <import addon="plugin.video.kodi4vn.bilutv" version="5.11" />
+        <import addon="plugin.video.kodi4vn.bilutv" version="5.1.12" />
         <import addon="plugin.video.kodi4vn.phimbathu" version="5.1.11" />
 		<import addon="script.module.six"/>
 		<import addon="script.module.pil"/>
