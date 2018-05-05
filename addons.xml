@@ -324,7 +324,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.hkn.hdonline" name="[COLOR green]*[/COLOR]HDOnline" version="1.0.6" provider-name="anhlon">
+<addon id="plugin.video.hkn.hdonline" name="[COLOR green]*[/COLOR]HDOnline" version="1.0.7" provider-name="anhlon">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.framework" version="1.4"/>
