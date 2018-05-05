@@ -819,7 +819,7 @@
 	</addon>
 
 <addon id="plugin.video.thietkeweb30s.hdonline"
-       version="1.0.0"
+       version="1.0.1"
        name="[COLOR ffff0000]HDOnline[/COLOR]"
        provider-name="itv member">
     <requires>
@@ -1423,6 +1423,7 @@
 	    <import addon="plugin.video.thietkeweb30s.sctv" version="3.1" />
         <import addon="plugin.video.thietkeweb30s.org.IPTVShare" version="1.1.1" />
         <import addon="plugin.video.kodi4vn.hplus.vn" version="10.7" />
+        <import addon="plugin.video.thietkeweb30s.hdonline" version="1.0.1" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
 	</requires>
 	<extension point="xbmc.addon.repository"
