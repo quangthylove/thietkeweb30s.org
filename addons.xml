@@ -993,6 +993,58 @@
 	</extension>
 </addon>
 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<addon id="plugin.video.v137.kenh88" version="999999.4.5" name="Kenh88.com" provider-name="V137">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0" />
+			<import addon="script.module.pil" version="1.1.7" />
+			<import addon="script.module.requests" version="2.6.0" />
+			<import addon="script.module.resolveurl" version="1.0.0" />
+			<import addon="script.module.urlresolver" version="1.0.0" />
+			<import addon="script.module.v137" version="1.0" />
+		</requires>
+		<extension point="xbmc.python.module" library="default.py" />
+		<extension point="xbmc.addon.metadata">
+			<summary>Kenh88.com</summary>
+			<description>Kenh88.com (Vietnamese)</description>
+			<platform>all</platform>
+		</extension>
+	</addon>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<addon id="plugin.video.v137.vkool" version="999999.5.3" name="VKool" provider-name="V137">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0" />
+			<import addon="script.module.v137" />
+		</requires>
+		<extension point="xbmc.python.module" library="default.py" />
+		<extension point="xbmc.addon.metadata">
+			<summary>VKool.net (Vietnamese)</summary>
+			<description>VKool.net (Vietnamese)</description>
+			<platform>all</platform>
+		</extension>
+	</addon>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<addon id="plugin.video.v137.xphim" version="999999.6.2" name="xPhim" provider-name="V137">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0" />
+			<import addon="script.module.beautifulsoup4" version="4.3.2" />
+			<import addon="script.module.html5lib" version="0.999.0" />
+			<import addon="script.module.pil" version="1.1.7" />
+			<import addon="script.module.requests" version="2.6.0" />
+			<import addon="script.module.resolveurl" version="1.0.0" />
+			<import addon="script.module.urlresolver" version="1.0.0" />
+			<import addon="script.module.v137" version="1.0" />
+		</requires>
+		<extension point="xbmc.python.module" library="default.py" />
+		<extension point="xbmc.addon.metadata">
+			<summary>xPhim</summary>
+			<description>xPhim (Vietnamese)</description>
+			<platform>all</platform>
+		</extension>
+	</addon>
+
 <addon id="plugin.video.vietmediaF"
        name="[B]Thietkeweb30s.org[/B]"
        version="6.1.7"
@@ -1217,6 +1269,25 @@
 	</extension>
 </addon>
 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<addon id="script.module.v137" version="999999.2.1.15" name="V137 Modules" provider-name="V137">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0" />
+			<import addon="script.module.beautifulsoup4" />
+			<import addon="script.module.html5lib" />
+			<import addon="script.module.pil" />
+			<import addon="script.module.requests" />
+			<import addon="script.module.resolveurl" />
+			<import addon="script.module.urlresolver" />
+		</requires>
+		<extension point="xbmc.python.module" library="lib" />
+		<extension point="xbmc.addon.metadata">
+			<summary>V137 Modules</summary>
+			<description>V137 Modules</description>
+			<platform>all</platform>
+		</extension>
+	</addon>
+
 <addon id="script.rawmaintenance"
        name="thietkeweb30s.org"
        version="1.1.12"
@@ -1393,7 +1464,7 @@
 
 <addon 
 	id="repository.thietkeweb30s.org" 
-	version="3.0.2" 
+	version="3.0.3" 
 	name="[COLOR red][B]THIET[/B][/COLOR][COLOR blue][B]KE[/B][/COLOR][COLOR yellow][B]WEB[/B][/COLOR][COLOR lime][B]30S[/B][/COLOR].[COLOR orange][B]ORG[/B][/COLOR][B] Repository[/B]"
 	provider-name="thietkeweb30s.org">
 	<requires>
@@ -1423,6 +1494,10 @@
 	    <import addon="plugin.video.thietkeweb30s.sctv" version="3.2" />
         <import addon="plugin.video.thietkeweb30s.org.IPTVShare" version="1.1.1" />
         <import addon="plugin.video.kodi4vn.hplus.vn" version="10.7" />
+        <import addon="plugin.video.v137.kenh88" version="999999.4.5" />
+        <import addon="plugin.video.v137.vkool" version="999999.5.3" />
+        <import addon="plugin.video.v137.xphim" version="999999.6.2" />
+        <import addon="script.module.v137" version="999999.2.1.15" />
         <import addon="plugin.video.thietkeweb30s.hdonline" version="1.0.1" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
 	</requires>
