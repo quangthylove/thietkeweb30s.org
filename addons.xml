@@ -1755,6 +1755,12 @@
         <import addon="plugin.video.v137.xphim" version="999999.6.2" />
         <import addon="plugin.video.kodi4vn.phimhayplus" version="1.0.1" />
         <import addon="plugin.video.kodi4vn.tvhay" version="1.0.6" />
+        <import addon="script.module.v137" version="999999.2.1.15" />
+        <import addon="script.module.cfscrape" version="1.9.4.1" />
+        <import addon="script.module.future" version="0.16.0.4" />
+        <import addon="script.module.pyjsparser" version="2.4.5.1" />
+        <import addon="script.module.pytz" version="2014.2.1" />
+        <import addon="script.module.tzlocal" version="1.3.1.1" />
         <import addon="plugin.video.thietkeweb30s.hdonline" version="1.0.1" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
 	</requires>
