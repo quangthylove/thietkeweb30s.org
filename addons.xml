@@ -272,6 +272,7 @@
     <import addon="script.module.requests" />
     <import addon="script.module.kodi4vn" version="0.2"/>
     <import addon="script.module.urlresolver"/>
+    <import addon="script.module.js2py" version="0.4.3.1" />
     <import addon="script.module.futures"/>
   </requires>
   <extension point="xbmc.python.module" library="default.py" />
@@ -1753,7 +1754,6 @@
         <import addon="plugin.video.v137.vkool" version="999999.5.3" />
         <import addon="plugin.video.v137.xphim" version="999999.6.2" />
         <import addon="plugin.video.kodi4vn.phimhayplus" version="1.0.1" />
-        <import addon="plugin.video.kodi4vn.phimmedia" version="1.0.4" />
         <import addon="plugin.video.kodi4vn.tvhay" version="1.0.6" />
         <import addon="script.module.kodi4vn" version="0.5" />
         <import addon="script.module.v137" version="999999.2.1.15" />
