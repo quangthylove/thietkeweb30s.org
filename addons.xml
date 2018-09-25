@@ -1288,6 +1288,19 @@
   </extension>
 </addon> 
 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<addon id="script.module.cachecontrol" version="0.1" name="CacheControl" provider-name="thongld">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0" />
+		</requires>
+		<extension point="xbmc.python.module" library="lib" />
+		<extension point="xbmc.addon.metadata">
+			<summary>Kodi4VN Modules</summary>
+			<description>Kodi4VN Modules</description>
+			<platform>all</platform>
+		</extension>
+	</addon>
+
 <addon id="script.module.framework" name="XBMC Plugin Framework" version="1.4" provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.7.0"/>
@@ -1299,6 +1312,25 @@
     <license></license>
     <platform>all</platform>
     <website></website>
+  </extension>
+</addon>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.future"
+       name="future"
+       version="0.16.0.4"
+       provider-name="Ed Schofield">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Clean single-source support for Python 3 and 2</summary>
+    <description lang="en">future is the missing compatibility layer between Python 2 and Python 3. It allows you to use a single, clean Python 3.x-compatible codebase to support both Python 2 and Python 3 with minimal overhead.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://github.com/PythonCharmers/python-future</source>
+    <website>http://python-future.org</website>
   </extension>
 </addon>
 
@@ -1579,7 +1611,7 @@
 	    <import addon="plugin.video.thietkeweb30s.sctv" version="3.2" />
 		<import addon="plugin.video.f4mTester" version="5.6.2" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
-		<import addon="repository.thietkeweb30s.org" version="3.0.3" />
+		<import addon="repository.thietkeweb30s.org" version="3.0.5" />
 	</requires>
 	<extension point="xbmc.addon.repository"
 		name="Thietkeweb30s.org Add-on's Repository">
@@ -1598,7 +1630,7 @@
 
 <addon 
 	id="repository.thietkeweb30s.org" 
-	version="3.0.4" 
+	version="3.0.5" 
 	name="[COLOR red][B]THIET[/B][/COLOR][COLOR blue][B]KE[/B][/COLOR][COLOR yellow][B]WEB[/B][/COLOR][COLOR lime][B]30S[/B][/COLOR].[COLOR orange][B]ORG[/B][/COLOR][B] Repository[/B]"
 	provider-name="thietkeweb30s.org">
 	<requires>
@@ -1637,6 +1669,8 @@
         <import addon="script.module.js2py" version="0.4.3.1" />
         <import addon="script.module.kodi4vn" version="0.5" />
         <import addon="script.module.v137" version="999999.2.1.15" />
+        <import addon="script.module.cachecontrol" version="0.1" />
+        <import addon="script.module.future" version="0.16.0.4" />
         <import addon="plugin.video.thietkeweb30s.hdonline" version="1.0.1" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
 	</requires>
