@@ -1701,7 +1701,7 @@
 	    <import addon="plugin.video.thietkeweb30s.sctv" version="3.2" />
 		<import addon="plugin.video.f4mTester" version="5.6.2" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
-		<import addon="repository.thietkeweb30s.org" version="3.0.5" />
+		<import addon="repository.thietkeweb30s.org" version="3.0.3" />
 	</requires>
 	<extension point="xbmc.addon.repository"
 		name="Thietkeweb30s.org Add-on's Repository">
@@ -1720,7 +1720,7 @@
 
 <addon 
 	id="repository.thietkeweb30s.org" 
-	version="3.0.6" 
+	version="3.0.3" 
 	name="[COLOR red][B]THIET[/B][/COLOR][COLOR blue][B]KE[/B][/COLOR][COLOR yellow][B]WEB[/B][/COLOR][COLOR lime][B]30S[/B][/COLOR].[COLOR orange][B]ORG[/B][/COLOR][B] Repository[/B]"
 	provider-name="thietkeweb30s.org">
 	<requires>
@@ -1755,7 +1755,6 @@
         <import addon="plugin.video.v137.xphim" version="999999.6.2" />
         <import addon="plugin.video.kodi4vn.phimhayplus" version="1.0.1" />
         <import addon="plugin.video.kodi4vn.tvhay" version="1.0.6" />
-        <import addon="script.module.kodi4vn" version="0.5" />
         <import addon="script.module.v137" version="999999.2.1.15" />
         <import addon="plugin.video.thietkeweb30s.hdonline" version="1.0.1" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
