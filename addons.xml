@@ -1301,6 +1301,30 @@
 		</extension>
 	</addon>
 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.cfscrape"
+       name="cfscrape"
+       version="1.9.4.1"
+       provider-name="jdollar, Kodi4VN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Scraper that bypasses cloudflare's anti bot security</summary>
+    <description>Packed for Kodi from https://github.com/Anorov/cloudflare-scrape</description>
+    <platform>all</platform>
+    <language></language>
+    <license>MIT</license>
+    <forum></forum>
+    <website>https://github.com/Anorov/cloudflare-scrape</website>
+    <source>http://github.com/Anorov/cloudflare-scrape</source>
+    <email>ionizedwarhead10 AT gmail.com</email>
+  </extension>
+</addon>
+
 <addon id="script.module.framework" name="XBMC Plugin Framework" version="1.4" provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.7.0"/>
@@ -1670,6 +1694,7 @@
         <import addon="script.module.kodi4vn" version="0.5" />
         <import addon="script.module.v137" version="999999.2.1.15" />
         <import addon="script.module.cachecontrol" version="0.1" />
+        <import addon="script.module.cfscrape" version="1.9.4.1" />
         <import addon="script.module.future" version="0.16.0.4" />
         <import addon="plugin.video.thietkeweb30s.hdonline" version="1.0.1" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
