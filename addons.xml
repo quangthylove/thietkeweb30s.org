@@ -1701,7 +1701,7 @@
 	    <import addon="plugin.video.thietkeweb30s.sctv" version="3.2" />
 		<import addon="plugin.video.f4mTester" version="5.6.2" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
-		<import addon="repository.thietkeweb30s.org" version="3.0.6" />
+		<import addon="repository.thietkeweb30s.org" version="3.0.7" />
 	</requires>
 	<extension point="xbmc.addon.repository"
 		name="Thietkeweb30s.org Add-on's Repository">
@@ -1710,7 +1710,7 @@
 		<datadir zip="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Install addon from Hieuhien.vn's repository</summary>
+		<summary lang="en">Install addon from Thietkeweb30s's repository</summary>
 		<description lang="en">[COLOR red][B]thietkeweb30s.org[/COLOR]-[COLOR lime]Repository tập hợp các addon và repository giải trí online trên XBMC - Kodi[/B][/COLOR]</description>
 		<disclaimer lang="en">Mọi nội dung được lấy từ Internet vì vậy chúng tôi không chịu trách nhiệm về chất lượng cũng như sự ổn định</disclaimer>
 		<email>honhakhanhquynh@gmail.com</email>
@@ -1720,7 +1720,7 @@
 
 <addon 
 	id="repository.thietkeweb30s.org" 
-	version="3.0.6" 
+	version="3.0.7" 
 	name="[COLOR red][B]THIET[/B][/COLOR][COLOR blue][B]KE[/B][/COLOR][COLOR yellow][B]WEB[/B][/COLOR][COLOR lime][B]30S[/B][/COLOR].[COLOR orange][B]ORG[/B][/COLOR][B] Repository[/B]"
 	provider-name="thietkeweb30s.org">
 	<requires>
@@ -1769,6 +1769,42 @@
 		<info compressed="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml.md5</checksum>		
 		<datadir zip="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master</datadir>
+		<dir>
+			<info compressed="false">http://thong.viettv24.com/kodi4vn/addons.xml</info>
+		<checksum>http://thong.viettv24.com/kodi4vn/addons.xml.md5</checksum>
+		<datadir zip="true">http://thong.viettv24.com/kodi4vn/</datadir>
+		</dir>
+<dir>
+			<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+			<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+		</dir>
+    <dir>
+			<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml</info>
+			<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/</datadir>
+    </dir>
+		<dir>
+			<info compressed="true">http://repo.kodi.vn/00-VMFrepo/addons.xml</info>
+			<checksum>http://repo.kodi.vn/00-VMFrepo/addons.xml.md5</checksum>
+			<datadir zip="true">http://repo.kodi.vn/00-VMFrepo/</datadir>
+		</dir>
+
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://github.com/jdf76/repository/raw/master/addons.xml</info>
+			<checksum>https://github.com/jdf76/repository/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/jdf76/repository/raw/master/zips</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/kodibae/repository.kodibae/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/kodibae/repository.kodibae/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kodibae/repository.kodibae/master/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Install addon from Thietkeweb30s.org's repository</summary>
