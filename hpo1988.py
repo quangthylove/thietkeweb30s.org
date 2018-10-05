@@ -1,4 +1,4 @@
-﻿#!/usr/bin/python
+#!/usr/bin/python
 #coding=utf-8
 import httplib2
 import json
@@ -15,7 +15,7 @@ import thread
 from datetime import datetime
 # Tham khảo xbmcswift2 framework cho kodi addon tại
 # http://xbmcswift2.readthedocs.io/en/latest/
-from kodiswift import Plugin, xbmc, xbmcaddon, xbmcgui, actions
+from xbmcswift2 import Plugin, xbmc, xbmcaddon, xbmcgui, actions
 path = xbmc.translatePath(
 	xbmcaddon.Addon().getAddonInfo('path')).decode("utf-8")
 cache = xbmc.translatePath(os.path.join(path, ".cache"))
@@ -107,7 +107,7 @@ def M3UToItems(url_path=""):
 	return items
 
 
-@plugin.cached(ttl=525600)
+@plugin.cached(TTL=525600)
 def getCachedItems(url_path="0"):
 	return AddTracking(getItems(url_path))
 
@@ -195,7 +195,7 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 			item["path"] = pluginrootpath + "/executebuiltin/-"
 		else:
 			if "spreadsheets/d/" in item["path"]:
-				https://docs.google.com/spreadsheets/d/13zUxgD6SfGj1YmRa9RU4Vu1AgVv8EaBAsBP3MxEpXOY/edit#gid=0
+				# https://docs.google.com/spreadsheets/d/13zUxgD6SfGj1YmRa9RU4Vu1AgVv8EaBAsBP3MxEpXOY/edit#gid=0/edit#gid=0
 				match_cache = re.search('cache=(.+?)($|&)', item["path"])
 				match_passw = re.search('passw=(.+?)($|&)', item["path"])
 
@@ -256,43 +256,44 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 		if item["label2"].startswith("http"):
 			item["path"] += "?sub=" + urllib.quote_plus(item["label2"].encode("utf8"))
 		items += [item]
-	#if url_path == "0":
-	#	add_playlist_item  = {
-	#		"context_menu": [
-	#			ClearPlaylists(""),
-	#		],
-	#		"label":"[COLOR yellow]cám ơn các bạn đã ủng hộ[/COLOR]",
-	#		"path": "%s/add-playlist" % (pluginrootpath),
-	#		"thumbnail": "http://userscontent2.emaze.com/images/5bc10631-6b26-4d3a-a56f-bd68522f965c/Slide21_Pic1_636000467320479770.png"
-	#	}
-	#	items += [add_playlist_item]
-	#	playlists = plugin.get_storage('playlists')
-	#	if 'sections' in playlists:
-	#		for section in playlists['sections']:
-	#			item = {
-	#				"context_menu": [
-	#					ClearPlaylists(section),
-	#				]
-	#			}
-	#			if "@@" in section:
-	#				tmp     = section.split("@@")
-	#				passw   = tmp[-1]
-	#				section = tmp[0]
-	#				item["label"] = section
-	#				item["path"]  = "%s/password-section/%s/%s" % (
-	#					pluginrootpath,
-	#					passw,
-	#					section.split("] ")[-1]
-	#				)
-	#			else:
-	#				item["label"] = section
-	#				item["path"]  = "%s/section/%s" % (
-	#					pluginrootpath,
-	#					section.split("] ")[-1]
-	#				)
-	#			item["thumbnail"] = "http://1.bp.blogspot.com/-gc1x9VtxIg0/VbggLVxszWI/AAAAAAAAANo/Msz5Wu0wN4E/s1600/playlist-advertorial.png"
-	#			items.append(item)
+	if url_path == "0":
+		add_playlist_item = {
+			"context_menu": [
+				ClearPlaylists(""),
+			],
+			"label": "[COLOR yellow]*** Thêm Playlist ***[/COLOR]",
+			"path": "%s/add-playlist" % (pluginrootpath),
+			"thumbnail": "http://1.bp.blogspot.com/-gc1x9VtxIg0/VbggLVxszWI/AAAAAAAAANo/Msz5Wu0wN4E/s1600/playlist-advertorial.png"
+		}
+		items += [add_playlist_item]
+		playlists = plugin.get_storage('playlists')
+		if 'sections' in playlists:
+			for section in playlists['sections']:
+				item = {
+					"context_menu": [
+						ClearPlaylists(section),
+					]
+				}
+				if "@@" in section:
+					tmp = section.split("@@")
+					passw = tmp[-1]
+					section = tmp[0]
+					item["label"] = section
+					item["path"] = "%s/password-section/%s/%s" % (
+						pluginrootpath,
+						passw,
+						section.split("] ")[-1]
+					)
+				else:
+					item["label"] = section
+					item["path"] = "%s/section/%s" % (
+						pluginrootpath,
+						section.split("] ")[-1]
+					)
+				item["thumbnail"] = "http://1.bp.blogspot.com/-gc1x9VtxIg0/VbggLVxszWI/AAAAAAAAANo/Msz5Wu0wN4E/s1600/playlist-advertorial.png"
+				items.append(item)
 	return items
+
 
 @plugin.route('/remove-playlists/', name="remove_all")
 @plugin.route('/remove-playlists/<item>')
@@ -996,7 +997,8 @@ def get_playable_url(url):
 		except:
 			header = "Có lỗi xảy ra!"
 			message = "Không lấy được link (link hỏng hoặc bị xóa)"
-			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' %
+			                    (header, message, 10000, ''))
 			return ""
 	elif "pscp.tv" in url:
 		pscpid = re.search("w/(.+?)($|\?)", url).group(1)
@@ -1009,9 +1011,51 @@ def get_playable_url(url):
 	elif "google.com" in url:
 		url = getGDriveHighestQuality(url)
 	elif re.match("^https*\://www\.fshare\.vn/file", url):
+		xshare_settings_path = xbmc.translatePath(
+			"special://profile/addon_data/plugin.video.xshare/settings.xml")
+		if os.path.exists(xshare_settings_path):
+			with open(xshare_settings_path, "r") as f:
+				s = f.read()
+				# if 'id="getLinkFree" value="false"' in s:
+				return "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(url)
+				# else:
+				# 	line1 = "Nội dung này cần nhập [COLOR yellow]FShare VIP[/COLOR] [COLOR orange]Cá Nhân[/COLOR] trong [COLOR yellow]XShare[/COLOR]"
+				# 	line2 = "Xin vui lòng xem video hướng dẫn chi tiết tại"
+				# 	line3 = "[B][COLOR orange]http://bit.ly/fshare-xshare[/COLOR][/B]"
+				# 	dlg = xbmcgui.Dialog()
+				# 	dlg.ok("Chưa nhập FShare cá nhân!!!", line1, line2, line3)
+		else:
+			header = "Không tìm thấy Add-on Settings của XShare"
+			message = "Bạn cần cài addon \"XShare XBMC HDVideo\" và thiết lập FShare VIP trong XShare để xem nội dung này"
+			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' %
+			                    (header, message, 10000, ''))
+		return ""
+		# try:
+		# 	with open(xshare_settings_path,"r") as f:
+		# 		s = f.read()
+		# 		if 'id="getLinkFree" value="false"' in s:
+		# 			return "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(url)
+		# except: pass
+
+		url = url.replace("http://", "https://")
+		http.follow_redirects = False
+		get_fshare = "https://docs.google.com/spreadsheets/d/1fPsMWKEbrWg5_rUQMFrgNwUd4r_viAn111Qqc9etn5g/export?format=tsv&gid=1368829764"
 		try:
-			cred = GetFShareCred()
-			if cred:
+			(resp, content) = http.request(
+				get_fshare, "GET"
+			)
+		except:
+			header = "Server quá tải!"
+			message = "Xin vui lòng thử lại sau"
+			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' %
+			                    (header, message, 10000, ''))
+			return ""
+
+		tmps = content.split('\n')
+		random.shuffle(tmps)
+		for tmp in tmps:
+			try:
+				cred = json.loads(tmp.decode("base64"))
 				fshare_headers = {
 					"Accept-Encoding": "gzip, deflate, br",
 					'Cookie': 'session_id=%s' % cred["session_id"]
@@ -1031,12 +1075,51 @@ def get_playable_url(url):
 					history = plugin.get_storage('history')
 					header = "Không lấy được link FShare VIP!"
 					message = "Link không tồn tại hoặc file đã bị xóa"
-					xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
-					return None
+					xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' %
+					                    (header, message, 10000, ''))
+
+					h = {
+						"Accept-Encoding": "gzip, deflate, sdch, br",
+						"Content-Type": "application/x-www-form-urlencoded"
+					}
+					body = urllib.urlencode({
+						"entry.955186172": url,
+						"entry.1660252828": history["sources"][0]
+					})
+					(resp, content) = http.request(
+						"aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlwUUxTZndkWU5zdzZxZG80NzhEYlRNRU9helRkMEVMR056Sm9KcFV3SlBEZlBoc0NaV2RBL2Zvcm1SZXNwb25zZQ==".decode(
+							"base64"),
+						"POST", headers=h,
+						body=body
+					)
+					return ""
 				else:
 					return json.loads(content)["location"]
-			return None
-		except:	pass
+				# elif "location" in content:
+				# 	return json.loads(content)["location"]
+				# else:
+				# 	tok = re.compile('data-tk="(.+?)"').findall(content)[0]
+				# 	data_download = {
+				# 		"fs_csrf"                : tok,
+				# 		"DownloadForm[pwd]"      : "",
+				# 		"DownloadForm[linkcode]" : url.split("/")[-1],
+				# 		"ajax"                   : "download-form",
+				# 		"undefined"              : "undefined"
+				# 	}
+				# 	(resp, content) = http.request(
+				# 		"https://www.fshare.vn/download/get", "POST",
+				# 		headers = fshare_headers,
+				# 		body=urllib.urlencode(data_download)
+				# 	)
+				# 	res_json = json.loads(content)
+				# 	if res_json["wait_time"] == "0":
+				# 		return res_json["url"]
+				# 	else:
+				# 		header  = "Không lấy được link FShare VIP!"
+				# 		message = '"Wait time" lớn hơn 0!!!'
+				# 		xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+			except:
+				pass
 	elif "tv24.vn" in url:
 		cid = re.compile('/(\d+)/').findall(url)[0]
 		return "plugin://plugin.video.sctv/play/" + cid
@@ -1047,67 +1130,6 @@ def get_playable_url(url):
 		if "://" not in url:
 			url = None
 	return url
-
-def LoginFShare(uname,pword):
-	login_uri = "https://api2.fshare.vn/api/user/login"
-	data = '{"app_key" : "L2S7R6ZMagggC5wWkQhX2+aDi467PPuftWUMRFSn", "user_email" : "%s", "password" : "%s"}' % (uname, pword)
-
-	resp, cont = http.request(login_uri, "POST", body=data)
-	if "token" in cont and "session_id" in cont:
-		plugin.set_setting("cred",cont)
-		plugin.set_setting("hash",uname+pword)
-		_json = json.loads(cont)
-		return _json
-	else: return None
-
-
-def GetFShareCred():
-	try:
-		_hash = plugin.get_setting("hash")
-		uname = plugin.get_setting("usernamefshare")
-		pword = plugin.get_setting("passwordfshare")
-		if _hash != (uname+pword): 
-			plugin.set_setting("cred","")
-		cred  = json.loads(plugin.get_setting("cred"))
-		user = GetFShareUser(cred)
-		LoginOKNoti(user["email"], user["level"])
-		return cred
-	except:
-		try:
-			uname = plugin.get_setting("usernamefshare")
-			pword = plugin.get_setting("passwordfshare")
-			cred = LoginFShare(uname,pword)
-			user = GetFShareUser(cred)
-			LoginOKNoti(user["email"], user["level"])
-			return cred
-		except: 
-			dialog = xbmcgui.Dialog()
-			yes = dialog.yesno(
-				'Đăng nhập không thành công!\n',
-				'[COLOR yellow]Bạn muốn nhập tài khoản FShare VIP bây giờ không?[/COLOR]',
-				yeslabel='OK, nhập ngay',
-				nolabel='Bỏ qua'
-			)
-			if yes:
-				plugin.open_settings()
-				return GetFShareCred()
-			return None
-
-
-def LoginOKNoti(user="",lvl=""):
-	header = "[COLOR yellow]Đăng nhập thành công![/COLOR]"
-	message = "Chào [COLOR red]VIP[/COLOR] [COLOR lime]{}[/COLOR] (lvl [COLOR yellow]{}[/COLOR])".format(user, lvl)
-	xbmc.executebuiltin('Notification("{}", "{}", "{}", "")'.format(header, message, "10000"))
-
-
-def GetFShareUser(cred):
-	user_url = "https://api2.fshare.vn/api/user/get"
-	headers = {
-		"Cookie": "session_id=" + cred["session_id"]
-	}
-	resp, cont = http.request(user_url, "GET", headers=headers)
-	user = json.loads(cont)
-	return user
 
 
 def GetPlayLinkFromDriveID(drive_id):
