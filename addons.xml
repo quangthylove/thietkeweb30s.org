@@ -647,6 +647,30 @@
 	</extension>
 </addon>
 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon
+  id="plugin.video.thongld.vnplaylist"
+  version="89.89.89.89"
+  name="[COLOR red]Thietkeweb30s.org[/COLOR]"
+  provider-name="Thietkeweb30s.org">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.kodiswift" version="0.0.7" />
+    <import addon="script.module.kodi4vn" version="0.0.7" />
+    <import addon="plugin.video.youtube" version="4.4.1" />
+    <import addon="script.module.httplib2" version="0.1" />
+    <import addon="service.kodi4vn.iptvproxy" version="0.1" />
+    <import addon="service.kodi4vn.maintenance" version="0.1" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>AIO Media Center cho người Việt</summary>
+    <description>Cổng giải trí mở, miễn phí, tất cả trong một cho người Việt</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon
   id="plugin.video.thietkeweb30s.org.fpt-play"
   version="1.0.2"
@@ -1724,7 +1748,7 @@
 	    <import addon="plugin.video.thietkeweb30s.sctv" version="3.2" />
 		<import addon="plugin.video.f4mTester" version="5.6.2" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
-		<import addon="repository.thietkeweb30s.org" version="3.0.7" />
+		<import addon="repository.thietkeweb30s.org" version="3.0.8" />
 	</requires>
 	<extension point="xbmc.addon.repository"
 		name="Thietkeweb30s.org Add-on's Repository">
@@ -1743,7 +1767,7 @@
 
 <addon 
 	id="repository.thietkeweb30s.org" 
-	version="3.0.7" 
+	version="3.0.8" 
 	name="[COLOR red][B]THIET[/B][/COLOR][COLOR blue][B]KE[/B][/COLOR][COLOR yellow][B]WEB[/B][/COLOR][COLOR lime][B]30S[/B][/COLOR].[COLOR orange][B]ORG[/B][/COLOR][B] Repository[/B]"
 	provider-name="thietkeweb30s.org">
 	<requires>
@@ -1778,6 +1802,7 @@
         <import addon="plugin.video.v137.xphim" version="999999.6.2" />
         <import addon="plugin.video.kodi4vn.phimhayplus" version="1.0.1" />
         <import addon="plugin.video.kodi4vn.tvhay" version="1.0.6" />
+        <import addon="plugin.video.thongld.vnplaylist" version="89.89.89.89" />
         <import addon="script.module.v137" version="999999.2.1.15" />
         <import addon="script.module.cfscrape" version="1.9.4.1" />
         <import addon="script.module.future" version="0.16.0.4" />
