@@ -19,29 +19,6 @@
   </extension>
 </addon>
 
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon
-  id="plugin.video.thongld.vnplaylist"
-  version="1.2"
-  name="[COLOR yellow]*[/COLOR]VN Open Playlist"
-  provider-name="thongld">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.xbmcswift2" version="0.0.7" />
-    <import addon="plugin.video.youtube" version="4.4.1" />
-    <import addon="script.module.httplib2" version="0.1" />
-    <import addon="service.kodi4vn.iptvproxy" version="0.1" />
-    <import addon="service.kodi4vn.maintenance" version="0.1" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>AIO Media Center cho người Việt</summary>
-    <description>Cổng giải trí mở, miễn phí, tất cả trong một cho người Việt</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.audio.vietmediaF"
        name="[B]Thietkeweb30s.org Music[/B]"
        version="9.9.1"
@@ -647,10 +624,9 @@
 	</extension>
 </addon>
 
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon
   id="plugin.video.thongld.vnplaylist"
-  version="89.89.89.89"
+  version="99.99.99.99"
   name="[COLOR red]Thietkeweb30s.org[/COLOR]"
   provider-name="Thietkeweb30s.org">
   <requires>
@@ -1802,7 +1778,7 @@
         <import addon="plugin.video.v137.xphim" version="999999.6.2" />
         <import addon="plugin.video.kodi4vn.phimhayplus" version="1.0.1" />
         <import addon="plugin.video.kodi4vn.tvhay" version="1.0.6" />
-        <import addon="plugin.video.thongld.vnplaylist" version="89.89.89.89" />
+        <import addon="plugin.video.thongld.vnplaylist" version="99.99.99.99" />
         <import addon="script.module.v137" version="999999.2.1.15" />
         <import addon="script.module.cfscrape" version="1.9.4.1" />
         <import addon="script.module.future" version="0.16.0.4" />
