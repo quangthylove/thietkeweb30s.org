@@ -203,7 +203,7 @@
 
 <addon
   id="plugin.video.kodi4vn.bilutv"
-  version="5.12"
+  version="5.13"
   name="[COLOR yellow]BiluTV.com[/COLOR]"
   provider-name="thongld">
   <requires>
@@ -1765,7 +1765,7 @@
 		<import addon="plugin.video.f4mTester" version="5.6.2" />
 		<import addon="plugin.video.thietkeweb30s.org.phatam" version="2.0.2" />
 	    <import addon="plugin.video.thietkeweb30s.phim60s" version="0.2" />
-        <import addon="plugin.video.kodi4vn.bilutv" version="5.12" />
+        <import addon="plugin.video.kodi4vn.bilutv" version="5.13" />
         <import addon="plugin.video.kodi4vn.phimbathu" version="5.1.13" />
         <import addon="plugin.video.thietkeweb30s.org.xemphimmienphi" version="0.1" />
 	    <import addon="plugin.video.thietkeweb30s.org.vtvgo" version="1.5" />
