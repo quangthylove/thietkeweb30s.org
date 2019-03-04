@@ -635,7 +635,6 @@
     <import addon="script.module.kodi4vn" version="0.0.7" />
     <import addon="plugin.video.youtube" version="4.4.1" />
     <import addon="script.module.httplib2" version="0.1" />
-    <import addon="service.kodi4vn.iptvproxy" version="0.1" />
     <import addon="service.kodi4vn.maintenance" version="0.1" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
