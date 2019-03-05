@@ -1723,7 +1723,7 @@
 	    <import addon="plugin.video.thietkeweb30s.sctv" version="3.2" />
 		<import addon="plugin.video.f4mTester" version="5.6.2" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
-		<import addon="repository.thietkeweb30s.org" version="3.0.8" />
+		<import addon="repository.thietkeweb30s.org" version="3.0.9" />
 	</requires>
 	<extension point="xbmc.addon.repository"
 		name="Thietkeweb30s.org Add-on's Repository">
@@ -1742,7 +1742,7 @@
 
 <addon 
 	id="repository.thietkeweb30s.org" 
-	version="3.0.8" 
+	version="3.0.9" 
 	name="[COLOR red][B]THIET[/B][/COLOR][COLOR blue][B]KE[/B][/COLOR][COLOR yellow][B]WEB[/B][/COLOR][COLOR lime][B]30S[/B][/COLOR].[COLOR orange][B]ORG[/B][/COLOR][B] Repository[/B]"
 	provider-name="thietkeweb30s.org">
 	<requires>
@@ -1764,6 +1764,7 @@
 		<import addon="plugin.video.f4mTester" version="5.6.2" />
 		<import addon="plugin.video.thietkeweb30s.org.phatam" version="2.0.2" />
 	    <import addon="plugin.video.thietkeweb30s.phim60s" version="0.2" />
+	    <import addon="plugin.video.kodi4vn.phimmedia" version="1.0.26" />
         <import addon="plugin.video.kodi4vn.bilutv" version="5.13" />
         <import addon="plugin.video.kodi4vn.phimbathu" version="5.1.13" />
         <import addon="plugin.video.thietkeweb30s.org.xemphimmienphi" version="0.1" />
@@ -1789,44 +1790,45 @@
 	</requires>
 	<extension point="xbmc.addon.repository"
 		name="Thietkeweb30s.org Add-on's Repository">
-		<info compressed="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml.md5</checksum>		
-		<datadir zip="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master</datadir>
 		<dir>
-			<info compressed="false">http://thong.viettv24.com/kodi4vn/addons.xml</info>
-		<checksum>http://thong.viettv24.com/kodi4vn/addons.xml.md5</checksum>
-		<datadir zip="true">http://thong.viettv24.com/kodi4vn/</datadir>
+			<info compressed="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master</datadir>
 		</dir>
-<dir>
+		<dir>
+			<info compressed="true">http://thong.viettv24.com/kodi4vn/addons.xml</info>
+			<checksum>http://thong.viettv24.com/kodi4vn/addons.xml.md5</checksum>
+			<datadir zip="true">http://thong.viettv24.com/kodi4vn/</datadir>
+		</dir>
+		<dir>
 			<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
 			<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
 		</dir>
     <dir>
-			<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml</info>
+			<info compressed="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml</info>
 			<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/</datadir>
     </dir>
+		<dir>
+			<info compressed="true">https://raw.github.com/hieuhienvn/hieuhien.vn/master/addons.xml</info>
+			<checksum>https://raw.github.com/hieuhienvn/hieuhien.vn/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/hieuhienvn/hieuhien.vn/raw/master/zips/</datadir>
+		</dir>
 		<dir>
 			<info compressed="true">http://repo.kodi.vn/00-VMFrepo/addons.xml</info>
 			<checksum>http://repo.kodi.vn/00-VMFrepo/addons.xml.md5</checksum>
 			<datadir zip="true">http://repo.kodi.vn/00-VMFrepo/</datadir>
 		</dir>
-
+		<dir>
+			<info compressed="true">https://raw.githubusercontent.com/thaitni/xbmc.repo.xshare/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/thaitni/xbmc.repo.xshare/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/thaitni/xbmc.repo.xshare/master</datadir>
+		</dir>
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
-		</dir>
-		<dir>
-			<info compressed="false">https://github.com/jdf76/repository/raw/master/addons.xml</info>
-			<checksum>https://github.com/jdf76/repository/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/jdf76/repository/raw/master/zips</datadir>
-		</dir>
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/kodibae/repository.kodibae/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/kodibae/repository.kodibae/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/kodibae/repository.kodibae/master/</datadir>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
