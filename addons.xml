@@ -1740,7 +1740,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.thietkeweb30s.org" name="[COLOR red][B]THIET[/B][/COLOR][COLOR blue][B]KE[/B][/COLOR][COLOR yellow][B]WEB[/B][/COLOR][COLOR lime][B]30S[/B][/COLOR].[COLOR orange][B]ORG[/B][/COLOR][B] Repository[/B]" version="3.0.9" provider-name="Thietkeweb30s.org'">
+<addon id="repository.thietkeweb30s.org" name="[COLOR red][B]THIET[/B][/COLOR][COLOR blue][B]KE[/B][/COLOR][COLOR yellow][B]WEB[/B][/COLOR][COLOR lime][B]30S[/B][/COLOR].[COLOR orange][B]ORG[/B][/COLOR][B] Repository[/B]" version="3.1.0" provider-name="Thietkeweb30s.org'">
 <requires>
 	<import addon="xbmc.addon" version="12.0.0"/>
 		<import addon="plugin.video.thietkeweb30s.org.movie" version="2.6.0" />
