@@ -1785,7 +1785,7 @@
 	</requires>
 <extension point="xbmc.addon.repository" name="Thietkeweb30s.org's Addon Repository">
 <dir>
-<info compressed="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml</info>
+<info compressed="false">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml</info>
 <checksum>https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml.md5</checksum>
 <datadir zip="true">http://thong.viettv24.com/kodi4vn/</datadir>
 </dir>
