@@ -1795,7 +1795,6 @@
         <import addon="plugin.video.v137.xphim" version="999999.6.2" />
         <import addon="plugin.video.kodi4vn.phimhayplus" version="1.0.1" />
         <import addon="plugin.video.kodi4vn.tvhay" version="1.0.6" />
-        <import addon="plugin.video.movies.thietkeweb30s.org" version="0.0.1" />
         <import addon="plugin.video.thongld.vnplaylist" version="99.99.99.99" />
         <import addon="script.module.v137" version="999999.2.1.15" />
         <import addon="script.module.cfscrape" version="1.9.4.1" />
