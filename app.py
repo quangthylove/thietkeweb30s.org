@@ -135,7 +135,7 @@ def list_category(cats, module, classname):
     # show search link
     url = build_url({'mode': 'search', 'module': module, 'class': classname})
     xbmcplugin.addDirectoryItem(HANDLE, url,
-                                xbmcgui.ListItem(label="[COLOR green][B] %s [/B][/COLOR]" % "Search ..."), True)
+                                xbmcgui.ListItem(label="[COLOR green][B] %s [/B][/COLOR]" % "Tìm kiếm ..."), True)
 
     for cat in cats:
         list_item = xbmcgui.ListItem(label=cat['title'])
@@ -367,7 +367,7 @@ def search(module, classname):
     url = build_url({'mode': 'dosearch', 'module': module, 'class': classname})
     xbmcplugin.addDirectoryItem(HANDLE,
                                 url,
-                                xbmcgui.ListItem(label="[COLOR orange][B]%s[/B][/COLOR]" % "Enter search text ..."),
+                                xbmcgui.ListItem(label="[COLOR orange][B]%s[/B][/COLOR]" % "Nhập tên phim tìm kiếm ..."),
                                 True)
 
     # Support to save search history
@@ -376,7 +376,7 @@ def search(module, classname):
         url = build_url({'mode': 'clearsearch', 'module': module, 'class': classname})
         xbmcplugin.addDirectoryItem(HANDLE,
                                     url,
-                                    xbmcgui.ListItem(label="[COLOR red][B]%s[/B][/COLOR]" % "Clear search text ..."),
+                                    xbmcgui.ListItem(label="[COLOR red][B]%s[/B][/COLOR]" % "Xóa văn bản tìm kiếm ..."),
                                     True)
         for txt in contents:
             url = build_url({'mode': 'dosearch', 'module': module, 'class': classname, 'url': txt})
