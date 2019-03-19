@@ -1809,7 +1809,7 @@
 <dir>
 <info compressed="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml</info>
 <checksum>https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml.md5</checksum>
-<datadir zip="true">http://thong.viettv24.com/kodi4vn/</datadir>
+<datadir zip="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/</datadir>
 </dir>
 <dir>
 <info compressed="false">
@@ -1819,7 +1819,7 @@ https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml
 https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5
 </checksum>
 <datadir zip="true">
-https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master
+https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/
 </datadir>
 </dir>
 <dir>
