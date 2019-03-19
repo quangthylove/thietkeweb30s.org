@@ -1812,20 +1812,42 @@
 <datadir zip="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/</datadir>
 </dir>
 <dir>
-<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml
+<info compressed="false">http://thong.viettv24.com/kodi4vn/addons.xml</info>
+<checksum>http://thong.viettv24.com/kodi4vn/addons.xml.md5</checksum>
+<datadir zip="true">http://thong.viettv24.com/kodi4vn/</datadir>
+</dir>
+<dir>
+<info compressed="false">
+https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml
 </info>
-<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
-<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+<checksum>
+https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5
+</checksum>
+<datadir zip="true">
+https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/
+</datadir>
 </dir>
 <dir>
-<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml</info>
-<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml.md5</checksum>
-<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/</datadir>
+<info compressed="false">
+https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml
+</info>
+<checksum>
+https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml.md5
+</checksum>
+<datadir zip="true">
+https://github.com/tvaddonsco/tva-release-repo/raw/master/
+</datadir>
 </dir>
 <dir>
-<info compressed="true">https://raw.github.com/hieuhienvn/hieuhien.vn/master/addons.xml</info>
-<checksum>https://raw.github.com/hieuhienvn/hieuhien.vn/master/addons.xml.md5</checksum>
-<datadir zip="true">https://github.com/hieuhienvn/hieuhien.vn/raw/master/zips/</datadir>
+<info compressed="true">
+https://raw.github.com/hieuhienvn/hieuhien.vn/master/addons.xml
+</info>
+<checksum>
+https://raw.github.com/hieuhienvn/hieuhien.vn/master/addons.xml.md5
+</checksum>
+<datadir zip="true">
+https://github.com/hieuhienvn/hieuhien.vn/raw/master/zips/
+</datadir>
 </dir>
 <dir>
 <info compressed="true">http://repo.kodi.vn/00-VMFrepo/addons.xml</info>
@@ -1833,23 +1855,35 @@
 <datadir zip="true">http://repo.kodi.vn/00-VMFrepo/</datadir>
 </dir>
 <dir>
-<info compressed="true">http://thong.viettv24.com/kodi4vn/addons.xml</info>
-<checksum>http://thong.viettv24.com/kodi4vn/addons.xml.md5</checksum>
-<datadir zip="true">http://thong.viettv24.com/kodi4vn/</datadir>
+<info compressed="true">
+https://raw.githubusercontent.com/thaitni/xbmc.repo.xshare/master/addons.xml
+</info>
+<checksum>
+https://raw.githubusercontent.com/thaitni/xbmc.repo.xshare/master/addons.xml.md5
+</checksum>
+<datadir zip="true">
+https://raw.githubusercontent.com/thaitni/xbmc.repo.xshare/master
+</datadir>
 </dir>
 <dir>
-<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
-<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
-<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
+<info compressed="false">
+https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml
+</info>
+<checksum>
+https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5
+</checksum>
+<datadir zip="true">
+https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/
+</datadir>
 </dir>
 </extension>
 <extension point="xbmc.addon.metadata">
-<summary>Install Thietkeweb30s.org Addons</summary>
-<description>
-Download and install addons from Thietkeweb30s.org's Repo: Best addons for Vietnamesse
-</description>
-<platform>all</platform>
-</extension>
+		<summary lang="en">Install addon from Thietkeweb30s's repository</summary>
+		<description lang="en">[COLOR red][B]thietkeweb30s.org[/COLOR]-[COLOR lime]Repository tập hợp các addon và repository giải trí online trên XBMC - Kodi[/B][/COLOR]</description>
+		<disclaimer lang="en">Mọi nội dung được lấy từ Internet vì vậy chúng tôi không chịu trách nhiệm về chất lượng cũng như sự ổn định</disclaimer>
+		<email>honhakhanhquynh@gmail.com</email>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon
