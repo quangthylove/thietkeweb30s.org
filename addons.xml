@@ -1745,7 +1745,7 @@
 	    <import addon="plugin.video.thietkeweb30s.sctv" version="3.2" />
 		<import addon="plugin.video.f4mTester" version="5.6.2" />
 		<import addon="resource.language.vi_vn" version="5.0.8" />
-		<import addon="repository.thietkeweb30s.org" version="3.1.2" />
+		<import addon="repository.thietkeweb30s.org" version="3.0.9" />
 	</requires>
 	<extension point="xbmc.addon.repository"
 		name="Thietkeweb30s.org Add-on's Repository">
@@ -1762,7 +1762,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.thietkeweb30s.org" name="[COLOR red][B]THIET[/B][/COLOR][COLOR blue][B]KE[/B][/COLOR][COLOR yellow][B]WEB[/B][/COLOR][COLOR lime][B]30S[/B][/COLOR].[COLOR orange][B]ORG[/B][/COLOR][B] Repository[/B]" version="3.1.2" provider-name="Thietkeweb30s.org'">
+<addon id="repository.thietkeweb30s.org" name="[COLOR red][B]THIET[/B][/COLOR][COLOR blue][B]KE[/B][/COLOR][COLOR yellow][B]WEB[/B][/COLOR][COLOR lime][B]30S[/B][/COLOR].[COLOR orange][B]ORG[/B][/COLOR][B] Repository[/B]" version="3.1.0" provider-name="Thietkeweb30s.org'">
 <requires>
 	<import addon="xbmc.addon" version="12.0.0"/>
 		<import addon="plugin.video.thietkeweb30s.org.movie" version="2.6.0" />
@@ -1807,9 +1807,9 @@
 	</requires>
 <extension point="xbmc.addon.repository" name="Thietkeweb30s.org's Addon Repository">
 <dir>
-			<info compressed="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml</info>
+<info compressed="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml</info>
 <checksum>https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/addons.xml.md5</checksum>
-<datadir zip="true">https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/</datadir>
+<datadir zip="true">http://thong.viettv24.com/kodi4vn/</datadir>
 </dir>
 <dir>
 <info compressed="false">
@@ -1819,7 +1819,7 @@ https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml
 https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5
 </checksum>
 <datadir zip="true">
-https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/
+https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master
 </datadir>
 </dir>
 <dir>
@@ -1845,19 +1845,19 @@ https://github.com/hieuhienvn/hieuhien.vn/raw/master/zips/
 </datadir>
 </dir>
 <dir>
-<info compressed="false">http://thong.viettv24.com/kodi4vn/addons.xml</info>
-<checksum>http://thong.viettv24.com/kodi4vn/addons.xml.md5</checksum>
-<datadir zip="true">http://thong.viettv24.com/kodi4vn/</datadir>
+<info compressed="true">http://repo.kodi.vn/00-VMFrepo/addons.xml</info>
+<checksum>http://repo.kodi.vn/00-VMFrepo/addons.xml.md5</checksum>
+<datadir zip="true">http://repo.kodi.vn/00-VMFrepo/</datadir>
 </dir>
 <dir>
 <info compressed="true">
-https://raw.githubusercontent.com/thaitni/xbmc.repo.xshare/master/addons.xml
+http://thong.viettv24.com/kodi4vn/addons.xml
 </info>
 <checksum>
-https://raw.githubusercontent.com/thaitni/xbmc.repo.xshare/master/addons.xml.md5
+http://thong.viettv24.com/kodi4vn/addons.xml.md5
 </checksum>
 <datadir zip="true">
-https://raw.githubusercontent.com/thaitni/xbmc.repo.xshare/master
+http://thong.viettv24.com/kodi4vn/
 </datadir>
 </dir>
 <dir>
