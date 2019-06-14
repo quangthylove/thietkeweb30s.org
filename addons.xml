@@ -325,7 +325,6 @@
 
 <addon id="plugin.video.movies.thietkeweb30s.org" name="Movies ( Thietkeb30s.org )" version="0.0.2" provider-name="thietkeweb30s.org">
     <requires>
-        <import addon="xbmc.python" version="2.26.0"/>
         <import addon="script.module.beautifulsoup4" version="4.3.1"/>
         <import addon="script.module.pycryptodome" version="3.4.1" optional="true"/>
         <import addon="script.module.resolveurl" version="5.0.24"/>
