@@ -323,12 +323,13 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.movies.thietkeweb30s.org" name="Movies ( Thietkeb30s.org )" version="0.0.1" provider-name="thietkeweb30s.org">
+<addon id="plugin.video.movies.thietkeweb30s.org" name="Movies ( Thietkeb30s.org )" version="0.0.2" provider-name="thietkeweb30s.org">
     <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="xbmc.python" version="2.26.0"/>
         <import addon="script.module.beautifulsoup4" version="4.3.1"/>
         <import addon="script.module.pycryptodome" version="3.4.1" optional="true"/>
         <import addon="script.module.resolveurl" version="5.0.24"/>
+        <import addon="script.module.requests" version="2.7.0" />
         <import addon="script.module.requests" version="2.7.0" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
@@ -1797,7 +1798,7 @@
         <import addon="plugin.video.kodi4vn.phimhayplus" version="1.0.1" />
         <import addon="plugin.video.kodi4vn.tvhay" version="1.0.6" />
         <import addon="plugin.video.thongld.vnplaylist" version="99.99.99.99" />
-        <import addon="plugin.video.movies.thietkeweb30s.org" version="0.0.1" />
+        <import addon="plugin.video.movies.thietkeweb30s.org" version="0.0.2" />
         <import addon="script.module.v137" version="999999.2.1.15" />
         <import addon="script.module.cfscrape" version="1.9.4.1" />
         <import addon="script.module.future" version="0.16.0.4" />
@@ -2297,6 +2298,21 @@
 		<email></email>
 		<source>https://github.com/tomer953/skin.phenomenal</source>
 	</extension>
+</addon>
+
+<addon id="xbmc.python" version="2.26.0" provider-name="Team Kodi">
+  <backwards-compatibility abi="2.1.0"/>
+  <requires>
+    <import addon="xbmc.core" version="0.1.0"/>
+  </requires>
+  <extension-point id="script" schema="script.xsd"/>
+  <extension-point id="subtitles" schema="script.xsd"/>
+  <extension-point id="lyrics" schema="script.xsd"/>
+  <extension-point id="weather" schema="script.xsd"/>
+  <extension-point id="library" schema="script.xsd"/>
+  <extension-point id="screensaver" schema="script.xsd"/>
+  <extension-point id="plugin" schema="pluginsource.xsd"/>
+  <extension-point id="context.item" schema="contextitem.xsd"/>
 </addon>
 
 </addons>
