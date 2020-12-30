@@ -649,7 +649,7 @@
 
 <addon
   id="plugin.video.thongld.vnplaylist"
-  version="99.99.99.99"
+  version="100.99.99.01"
   name="[COLOR red]Thietkeweb30s.org[/COLOR]"
   provider-name="Thietkeweb30s.org">
   <requires>
