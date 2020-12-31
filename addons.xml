@@ -26,7 +26,7 @@
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.simple.downloader" version="1.9.4" />
-    <import addon="plugin.video.youtube" version="4.4.10"/> 
+    <import addon="plugin.video.youtube" version="7.8.8"/> 
 	<import addon="script.module.requests" version="1.0" />
  	</requires>
     <extension point="xbmc.python.pluginsource"
@@ -1247,7 +1247,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="[COLOR red]HUEHD*[/COLOR]PLUS" version="6.2.6" provider-name="Thietkeweb30s.org">
+<addon id="plugin.video.youtube" name="YouTube | Thietkeweb30s.org" version="7.8.8" provider-name="Thietkeweb30s.org">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
