@@ -323,25 +323,26 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.movies.thietkeweb30s.org" name="Movies ( Thietkeb30s.org )" version="0.0.2" provider-name="thietkeweb30s.org">
+<addon id="plugin.video.movies.thietkeweb30s.org" name="[COLOR lime][B]MOVIES | THIETKEWEB30S.ORG[/B][/COLOR]" version="0.0.3" provider-name="THIETKEWEB30S">
     <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.beautifulsoup4" version="4.3.1"/>
-        <import addon="script.module.pycryptodome" version="3.4.1" optional="true"/>
-        <import addon="script.module.resolveurl" version="5.0.24"/>
-        <import addon="script.module.requests" version="2.7.0" />
-        <import addon="script.module.requests" version="2.7.0" />
+        <import addon="script.module.urlresolver" version="5.0.40"/>
+        <import addon="script.module.requests" version="2.7.0"/>
+        <import addon="script.module.youtube.dl" version="18.1107.0"/>
+        <import addon="script.module.cloudscraper" version="1.2.24"/>
+        <import addon="script.module.simplejson" version="3.16.1"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Movies ( Thietkeb30s.org ) addon</summary>
-        <description>This plugin allows you to watch movies from several vietnamese websites likes bilutv phimmedia...
-        </description>
-        <disclaimer>The provider is not responsible for any issues caused by using this addon.
-        </disclaimer>
-        <platform>all</platform>
-        <email>hotro@thietkeweb30s.org</email>
-        <source>https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master/</source>
+        <summary>thietkeweb30s.org</summary>
+		<description lang="en">Tìm và Xem HD Video trên XBMC từ: fshare.vn, 4share.vn, vaphim.com, ifile.tv, phimfshare.com, fptplay.net, hdvietnam.com, megabox.vn, dangcaphd.com, hayhaytv.vn, hdviet.com, pubvn.net, vuahd.tv, phimmoi.net, hdonline.vn, phim3s.net, kenh88.com, phimdata.com, phimsot.com, phim47.com</description>
+		<platform>all</platform>
+		<language>en</language>
+		<license>GNU General Public License - v2</license>
+		<source>https://raw.githubusercontent.com/quangthylove/thietkeweb30s.org/master</source>
+	
     </extension>
 </addon>
 
@@ -740,7 +741,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.phimhaynhat" name="[COLOR lime][B]THIETKEWEB30S[/B][/COLOR]" version="3.5.6.1" provider-name="THIETKEWEB30S">
+<addon id="plugin.video.phimhaynhat" name="[COLOR lime][B]THIETKEWEB30S[/B][/COLOR]" version="3.5.6.2" provider-name="THIETKEWEB30S">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.video.F4mProxy" optional="true"/>
@@ -1731,7 +1732,7 @@
 		<import addon="plugin.video.kodi4vn.launcher" version="5.3.9" />
 		<import addon="plugin.video.thietkeweb30s.org.moviesplay" version="2.7.5" />
 		<import addon="plugin.video.vietmediaF" version="6.1.7" />
-		<import addon="plugin.video.phimhaynhat" version="3.5.6.0" />
+		<import addon="plugin.video.phimhaynhat" version="3.5.6.2" />
 		<import addon="plugin.video.4vn.fptplay" version="1.7.0" />
 		<import addon="plugin.video.thietkeweb30s.org.fshare" version="1.1.4" />
 		<import addon="plugin.video.thietkeweb30s.org.zingtv" version="1.0.4" />
@@ -1743,7 +1744,7 @@
         <import addon="plugin.video.thietkeweb30s.org.IPTVShare" version="1.1.1" />
         <import addon="plugin.video.kodi4vn.tvhay" version="1.0.6" />
         <import addon="plugin.video.thongld.vnplaylist" version="100.99.99.01" />
-        <import addon="plugin.video.movies.thietkeweb30s.org" version="0.0.2" />
+        <import addon="plugin.video.movies.thietkeweb30s.org" version="0.0.3" />
         <import addon="script.module.v137" version="999999.2.1.15" />
 		<import addon="xbmc.python" version="2.26.0" />
         <import addon="script.module.cfscrape" version="1.9.4.1" />
@@ -1817,7 +1818,7 @@
 		<import addon="plugin.video.kodi4vn.launcher" version="5.3.9" />
 		<import addon="plugin.video.thietkeweb30s.org.moviesplay" version="2.7.5" />
 		<import addon="plugin.video.vietmediaF" version="6.1.7" />
-		<import addon="plugin.video.phimhaynhat" version="3.5.6.0" />
+		<import addon="plugin.video.phimhaynhat" version="3.5.6.2" />
 		<import addon="plugin.video.4vn.fptplay" version="1.7.0" />
 		<import addon="plugin.video.thietkeweb30s.org.fshare" version="1.1.4" />
 		<import addon="plugin.video.thietkeweb30s.org.zingtv" version="1.0.4" />
@@ -1829,7 +1830,7 @@
         <import addon="plugin.video.thietkeweb30s.org.IPTVShare" version="1.1.1" />
         <import addon="plugin.video.kodi4vn.tvhay" version="1.0.6" />
         <import addon="plugin.video.thongld.vnplaylist" version="100.99.99.01" />
-        <import addon="plugin.video.movies.thietkeweb30s.org" version="0.0.2" />
+        <import addon="plugin.video.movies.thietkeweb30s.org" version="0.0.3" />
         <import addon="script.module.v137" version="999999.2.1.15" />
 		<import addon="xbmc.python" version="2.26.0" />
         <import addon="script.module.cfscrape" version="1.9.4.1" />
