@@ -1181,32 +1181,29 @@
 	</addon>
 
 <addon id="plugin.video.vietmediaF"
-       name="[B]Thietkeweb30s.org[/B]"
-       version="6.1.7"
-       provider-name="Thietkeweb30s.org">
+       name="[B]Thietkeweb30s.org | Video Online[/B]"
+       version="6.1.8"
+       provider-name="Thietkeweb30s.org | Video Online">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.simple.downloader" version="1.9.4" />
-		<import addon="plugin.video.youtube" version="4.4.10"/> 
-		<import addon="script.module.requests" version="1" />
- 	</requires>
-    <extension point="xbmc.python.module"
+		<import addon="plugin.video.youtube" version="5.4.5" />
+		<import addon="script.module.requests"/>
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.simple.downloader" version="1.9.5" />
+	</requires>
+    <extension point="xbmc.python.pluginsource"
                library="default.py">
-        <provides>video</provides>
     </extension>
 	<extension point="xbmc.service" library="autorun.py" start="startup">
 	</extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <language>en</language>
-		<summary lang="en">Thietkeweb30s.org Video Online</summary>
+		<summary lang="en">Thietkeweb30s.org | Video Online</summary>
 		<description lang="en">Trung tâm giải trí trực tuyến, xem phim, shows, tivi, ca nhạc, karaoke của người Việt. 
-		Các nguồn nội dung được lấy từ các cá nhân và tổ chức cung cấp và chia sẻ miễn phí trên mạng Internet. Add-on hoạt động như một trình duyệt media, không lưu trữ hay sở hữu bất cứ nguồn nội dung nào. Người dùng chịu trách nhiệm hoàn toàn về việc xem các nguồn nội dung này.</description>
-    <disclaimer>Các nguồn nội dung được lấy từ các cá nhân và tổ chức cung cấp miễn phí trên mạng Internet. Add-on không lưu trữ hay sở hữu bất cứ nguồn nội dung nào. Người dùng chịu trách nhiệm hoàn toàn về việc xem các nguồn nội dung này.
-- http://thietkeweb30s.org
-- Không được sử dụng mã nguồn mà không xin phép tác giả.
-- Không được thay đổi tên, hoặc các thông tin liên quan đến các add-on trong group.
-</disclaimer>
+		Các nguồn nội dung được lấy từ sự chia sẻ miễn phí trên mạng Internet. Add-on hoạt động như một trình duyệt media, không lưu trữ hay sở hữu bất cứ nguồn nội dung nào. Người dùng chịu trách nhiệm hoàn toàn về việc xem các nguồn nội dung này.</description>
+    <disclaimer>Add-on không lưu trữ hay sở hữu bất cứ nguồn nội dung nào. Người dùng chịu trách nhiệm hoàn toàn về việc xem các nguồn nội dung này.
+	</disclaimer>
     </extension>
 </addon>
 
@@ -1751,7 +1748,7 @@
 		<import addon="plugin.video.thietkeweb30s.org.movie" version="2.6.0" />
 		<import addon="plugin.video.kodi4vn.launcher" version="5.3.9" />
 		<import addon="plugin.video.thietkeweb30s.org.moviesplay" version="2.7.5" />
-		<import addon="plugin.video.vietmediaF" version="6.1.7" />
+		<import addon="plugin.video.vietmediaF" version="6.1.8" />
 		<import addon="plugin.video.phimhaynhat" version="3.5.6.2" />
 		<import addon="plugin.video.4vn.fptplay" version="1.7.0" />
 		<import addon="plugin.video.thietkeweb30s.org.fshare" version="1.1.4" />
@@ -1837,7 +1834,7 @@
 		<import addon="plugin.video.thietkeweb30s.org.movie" version="2.6.0" />
 		<import addon="plugin.video.kodi4vn.launcher" version="5.3.9" />
 		<import addon="plugin.video.thietkeweb30s.org.moviesplay" version="2.7.5" />
-		<import addon="plugin.video.vietmediaF" version="6.1.7" />
+		<import addon="plugin.video.vietmediaF" version="6.1.8" />
 		<import addon="plugin.video.phimhaynhat" version="3.5.6.2" />
 		<import addon="plugin.video.4vn.fptplay" version="1.7.0" />
 		<import addon="plugin.video.thietkeweb30s.org.fshare" version="1.1.4" />
